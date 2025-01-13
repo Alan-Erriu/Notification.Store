@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notification.Store.Common\Notification.Store.Common.csproj" />
+    <ProjectReference Include="..\Notification.Store.Configuration\Notification.Store.Configuration.csproj" />
+    <ProjectReference Include="..\Notification.Store.Data\Notification.Store.Data.csproj" />
+    <ProjectReference Include="..\Notification.Store.Services\Notification.Store.Services.csproj" />
+  </ItemGroup>
+
+</Project>
