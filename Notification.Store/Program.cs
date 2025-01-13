@@ -1,3 +1,4 @@
+using Notification.Store.Configuration.EmailConfiguration;
 using Notification.Store.Services.Services.Implementations;
 using Notification.Store.Services.Services.Interfaces;
 
@@ -11,6 +12,8 @@ builder.Services.AddSwaggerGen();
 
 // Add services to the container.
 builder.Services.AddScoped<ISendEmailService, SendEmailService>();
+//config
+builder.Services.Configure<GmailConfig>(builder.Configuration.GetSection("GmailConfig"));
 
 var app = builder.Build();
 
